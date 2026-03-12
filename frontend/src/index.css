@@ -1,0 +1,88 @@
+/* ==============================
+   Reset & Base Styles
+   ============================== */
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+ 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow: hidden; /* App handles its own scroll */
+}
+ 
+/* ==============================
+   Typography Defaults
+   ============================== */
+ 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+ 
+p {
+  line-height: 1.6;
+}
+ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ 
+/* ==============================
+   Form Element Resets
+   ============================== */
+ 
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+ 
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+ 
+/* ==============================
+   Scrollbar Styling
+   ============================== */
+ 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+ 
+/* ==============================
+   Root Mount Point
+   ============================== */
+ 
+#root {
+  height: 100vh;
+  width: 100vw;
+}
